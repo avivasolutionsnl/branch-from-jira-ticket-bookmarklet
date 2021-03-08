@@ -1,6 +1,6 @@
 javascript:(function () {
     const contextEl = document.querySelector("[role='dialog']") || document.querySelector("body");
-    const ticketNrEl = contextEl.querySelector("[class*=BreadcrumbsContainer-] > div:last-child a");
+    const ticketNrEl = contextEl.querySelector("[id='jira-issue-header'] a[target='_blank']");
     const titleEl = contextEl.querySelector("h1");
 
     function showMessage(message) {
