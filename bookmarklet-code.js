@@ -21,7 +21,7 @@ javascript:(function () {
     const titleDashedLowercase = titleEl.innerText.replace(/[\s\(\)\'\"]+/g, '-').toLowerCase();
     const ticketNr = ticketNrEl.innerText;
     const createBranchString =
-        `git checkout -b feature/${ticketNr}-${titleDashedLowercase} \ngit push -u origin feature/${ticketNr}-${titleDashedLowercase}\n`;
+        `git checkout -b feature/${ticketNr}_${titleDashedLowercase} \ngit push -u origin feature/${ticketNr}_${titleDashedLowercase}\n`;
 
     navigator.clipboard.writeText(createBranchString)
         .then(() => showMessage(`Copied:\n ${createBranchString}`))
