@@ -18,7 +18,7 @@ javascript:(function () {
         return;
     }
 
-    const titleDashedLowercase = titleEl.innerText.replace(/[\s\(\)\'\"]+/g, '-').toLowerCase();
+    const titleDashedLowercase = titleEl.innerText.replace(/[^a-zA-Z0-9 ]/g , '').replace(/[\s\(\)\'\"]+/g, '-').toLowerCase();
     const ticketNr = ticketNrEl.innerText;
     const createBranchString =
         `git checkout -b feature/${ticketNr}_${titleDashedLowercase} \ngit push -u origin feature/${ticketNr}_${titleDashedLowercase}\n`;
