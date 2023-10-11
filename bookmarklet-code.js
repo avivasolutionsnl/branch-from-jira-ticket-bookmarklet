@@ -5,7 +5,7 @@ javascript:(function () {
 
     function showMessage(message) {
         const el = document.createElement('div');
-        el.innerHTML = message;
+        el.innerText = message;
         el.style = "position:fixed; top: 0; right: 0; left: 0; padding: 10px; text-align: center; background-color: rgba(0,0,0,0.7); color: white; z-index: 9999;";
         document.body.appendChild(el);
         setTimeout(() => {
