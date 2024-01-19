@@ -1,5 +1,5 @@
 javascript:(function () {
-    const contextEl = document.querySelector("[role='dialog']") || document.querySelector("body");
+    const contextEl = document.querySelector("section[role='dialog']") || document.querySelector("body");
     const ticketNrEl = contextEl.querySelector("[id='jira-issue-header'] a[target='_blank']");
     const titleEl = contextEl.querySelector("h1");
 
